@@ -26,8 +26,8 @@ const Posts = ({ posts }) => {
               <Link href={`/pokedex/${data.id}`}>
                 <Image
                   src={data.image}
-                  width={300}
-                  height={20}
+                  width={200}
+                  height={400}
                   className="bg-gray-200 rounded"
                   id="img"
                   alt=""

@@ -37,6 +37,10 @@
   transform: rotate(0);
   animation: flip 1s infinite;
 }
+#img{
+  width: 200px;
+  height:200px;
+}
 
 @keyframes flip {
   50% {
