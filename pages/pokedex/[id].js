@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import typeColor from "../ColorType/colors.js";
-;
+import Image from 'next/image';
 
 export const getStaticPaths = async () => {
   const client = new ApolloClient({
@@ -100,7 +100,7 @@ const Home = ({ data }) => {
       </div>
       <div className="grid lg:grid-cols-2 sm:grid-cols-1 mt-10  h-3/6">
           <div className=" border w-5/6 ml-10 p-3 ">
-            <img src={post.image} className=" mx-auto w-[300px] h-[400px]  " alt="" />
+            <Image src={post.image} className=" mx-auto w-[300px] h-[400px]  " alt="" />
           </div>
         
         <div className=" px-10 text-xl mr-10 h-[4/6]">
