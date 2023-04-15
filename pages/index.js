@@ -26,8 +26,8 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div class="box">
-        <div class="plane"></div>
+      <div className="box">
+        <div className="plane"></div>
       </div>
     );
   }

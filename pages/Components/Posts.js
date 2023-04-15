@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link.js";
 import typeColor from "../ColorType/colors.js";
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 
 const Posts = ({ posts }) => {
   const [page, setPage] = useState(1);
@@ -23,9 +24,11 @@ const Posts = ({ posts }) => {
           return (
             <div className="m-2 w-48 h-58 hover:-translate-y-2" key={key}>
               <Link href={`/pokedex/${data.id}`}>
-                <img
+                <Image
                   src={data.image}
-                  className="w-full h-44 bg-gray-200 rounded"
+                  width={300}
+                  height={20}
+                  className="bg-gray-200 rounded"
                   id="img"
                   alt=""
                 />
